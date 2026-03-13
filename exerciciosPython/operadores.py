@@ -47,25 +47,38 @@ medida = float(input("valor 1: "))
 centimetros = medida * 100
 milimetros = medida * 1000
 print("Centimetros = {:.0f}cm\n milimetros = {:.0f}mm".format(centimetros, milimetros))
-"""
 
 #5) digite um numero e mostre sua tabuada
+
 #6) digite um valor e mostre quantos dolares ela pode comprar
-"""""
 valor1 = float(input("valor 1: "))
 dolar = 5.17
 compra = valor1 / dolar
 print("voce pode comprar {} dolares".format(dolar))
-"""
 
-#7) ler um preço e mostrar o novo valor com 5% de desconto
+
+#7) LER UM PREÇO E MOSTRAR COM 5% DE DESCONTO
 compra = float(input("valor da compra: "))
 desconto = 5
 total = compra - (compra*desconto/100)
 print(f"Com o desconto de {desconto}% ficou {total:.2f} reais")
 
-#8) ler o salario o mostre com 15% de aumento
+#8) LER O SALARIO E MOSTRAR COM 15% DE AUMENTO
 salario = int(input("digite seu salario: "))
 aumento = 15
 reajuste = salario + (salario * aumento/100)
 print(f"Com o reajuste de 15% o salário ficou {total:.2f} reais")
+
+
+#9) CONVERSOR DE G° PARA FAHRENHEIT
+graus = float(input("valor em graus: "))
+f = 9 * graus/5 + 32
+print(f"A converção de {graus} para Fahrenheit é de {f}F")
+"""
+
+#aluguel de carro calculando o preço a pagar, 
+#sabendo que o carro custa 60 por dia e 0.15 por km rodado
+dias = int(input("quantos dias de aluguel: "))
+kms = float(input("quantos km: "))
+pagar = (dias * 60) + (kms *0.15)
+print(f"O valor toltal a se pagar é de {pagar:.2f} reais")
