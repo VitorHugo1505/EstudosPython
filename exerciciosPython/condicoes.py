@@ -1,18 +1,18 @@
-"""""
+
 tempo = int(input("quantos anos tem seu carro: "))
 if tempo <= 3:
     print("seu carro é novo")
 else:
     print("seu carro é antigo")
 
-----------------
+
 nome = str(input("Qual o seu nome?: "))
 if nome == "Hugo":
     print("Que nome bonito!!")
 else:
     print(":)")
 print(f"Bom dia, {nome}")
-----------------------
+
 
 n1 = float(input("nota 1: "))
 n2 = float(input("nota 2: "))
@@ -24,7 +24,7 @@ else:
 
 
 #DESCOBRIR QUAL NUMERO A MAQUINA "PENSOU"
-import random 
+import random
 numeros = [1,2,3,4,5]
 numeroescolhido = random.choice(numeros)
 escolha = int(input("escolha um numero: "))
@@ -33,6 +33,11 @@ if escolha == numeroescolhido:
 else:
     print("vc errou o numero")
 print(f"O numero era {numeroescolhido}")
+
+#Ou
+from random import randint
+computador = radint(0,5)
+print()
 
 #LER A VELOCIDADE DE UM CARRO. SE ULTRAPASSAR 80KM/H MOSTRAR QUE FOI MULTADO
 #E A MULTA VAI CUSTAR 7,00 POR CADA KM aCIMA DO LIMITE
@@ -56,7 +61,7 @@ if viagem <= 200:
     print(f"Vc devera pagar {viagem * 0.50}")
 else:
     print(f"A viagem custou {viagem * 0.45}")
-"""
+
 
 #SABER SE UM ANO É BISSEXTO
 ano = int(input("Digite um ano"))
