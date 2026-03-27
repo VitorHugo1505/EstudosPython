@@ -1,4 +1,4 @@
-
+'''''
 tempo = int(input("quantos anos tem seu carro: "))
 if tempo <= 3:
     print("seu carro é novo")
@@ -62,7 +62,11 @@ if viagem <= 200:
 else:
     print(f"A viagem custou {viagem * 0.45}")
 
-
+'''
 #SABER SE UM ANO É BISSEXTO
-ano = int(input("Digite um ano"))
-divisor = 4
+ano = int(input("Digite um ano "))
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400:
+    print(f"O ano {ano} é bissexto")
+else:
+    print(f"O ano {ano} não é bissexto")
+
