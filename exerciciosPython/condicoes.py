@@ -1,4 +1,4 @@
-'''''
+
 tempo = int(input("quantos anos tem seu carro: "))
 if tempo <= 3:
     print("seu carro é novo")
@@ -62,7 +62,7 @@ if viagem <= 200:
 else:
     print(f"A viagem custou {viagem * 0.45}")
 
-'''
+
 #SABER SE UM ANO É BISSEXTO
 ano = int(input("Digite um ano "))
 if ano % 4 == 0 and ano % 100 != 0 or ano % 400:
@@ -70,3 +70,20 @@ if ano % 4 == 0 and ano % 100 != 0 or ano % 400:
 else:
     print(f"O ano {ano} não é bissexto")
 
+
+salario = float(input("qual o salario do funcionario"))
+if salario <= 1250:
+    novo = salario + (salario * 15/100)
+else:
+    novo = salario + (salario * 10/100)
+print(f"quem ganhava {salario:.2f} agr vai ganhar {novo:.2f}")
+
+
+#ANALISAR TRIANGULO
+s1 = float(input("Segmento 1: "))
+s2 = float(input("Segmento 2: "))
+s3 = float(input("Segmento 3: "))
+if s1 < s2 + s3 and s2 < s1 + s3 and s3 < s1 + s2:
+    print("os numeros formam um triangulo")
+else:
+    print("Os numeros não formam um triangulo")
